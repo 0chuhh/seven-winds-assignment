@@ -1,10 +1,10 @@
-import { OutlinedInput, OutlinedInputProps, TextField, TextFieldProps } from '@mui/material';
+import { OutlinedInput, OutlinedInputProps } from '@mui/material';
 import React, {FC} from 'react'
 import styles from './styles.module.scss';
 
 export type IInputProps = OutlinedInputProps 
 
-export const Input:FC<IInputProps> = (props) => {
+export const Input:FC<IInputProps> = React.memo((props) => {
     return (
         <OutlinedInput classes={{
             input:styles.input,
@@ -14,4 +14,4 @@ export const Input:FC<IInputProps> = (props) => {
         }} 
         {...props}/>
     )
-}
+})
