@@ -1,0 +1,87 @@
+.treeNodeRow {
+	
+
+	& .treeLevel {
+		position: relative;
+		box-sizing: border-box;
+
+		& img {
+			z-index: 20;
+			background: $darker-background-color;
+		}
+	}
+
+	& .icons {
+		transition: all 0.3s ease-in-out;
+
+		& > .trash {
+			background-color: transparent;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	& .icons:hover {
+		position: relative;
+		cursor: pointer;
+		& > .trash {
+			opacity: 1;
+		}
+	}
+
+	& .icons::before {
+		content: "";
+		position: absolute;
+		left: -15%;
+		width: 55px;
+		height: 30px;
+		background-color: #414144;
+		padding: 3px 7px 3px 7px;
+		border-radius: 6px;
+		opacity: 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	& .icons:hover::before {
+		opacity: 1;
+	}
+
+	& .treeLevelDeep::before {
+		content: "";
+		position: absolute;
+		width: 17px;
+		height: 1px;
+		top: 50%;
+		left: -12.5px;
+		background-color: $secondary-color;
+		z-index: 0;
+	}
+	& .treeLevelDeep::after {
+		content: "";
+		position: absolute;
+		width: 1px;
+		height: 69px;
+		bottom: 50%;
+		left: -12.5px;
+		background-color: $secondary-color;
+		z-index: 0;
+	}
+}
+
+
+.fields {
+	height: 60px;
+	display: grid;
+	grid-template-columns: 0.8fr 3fr repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 0px;
+	margin-bottom: 10px;
+}
+
+
+.fields div {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}

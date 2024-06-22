@@ -1,0 +1,22 @@
+.input {
+	border: solid 1px $hint-color;
+	border-radius: 6px;
+	color: $hint-color;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+        border: solid 1px $hint-color;
+    }
+
+	&:hover ~ fieldset {
+		border: solid 1px $hint-color !important;
+	}
+
+	&:focus {
+		color: $primary-color;
+	}
+
+	& :focus ~ fieldset {
+		border: solid 1px $primary-color !important ;
+	}
+}
