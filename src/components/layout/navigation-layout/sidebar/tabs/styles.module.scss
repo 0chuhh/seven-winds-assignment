@@ -1,0 +1,28 @@
+.tabs {
+	padding-top: 10px;
+    & .indicator{
+        background-color: $secondary-color;
+        width: 100%;
+        z-index: 0;
+        padding: 0;
+    }
+
+    & .tab {
+        margin: 0;
+        color:$primary-color;
+        flex-direction: row;
+        text-align: center;
+        justify-content: flex-start;
+        gap: 15px;
+        text-transform: capitalize;
+        font-size: 14px;
+        height: 30px;
+        min-height: auto;
+        z-index: 2;
+        padding: 0 20px;
+
+        & img{
+            margin: 0;
+        }
+    }
+}
