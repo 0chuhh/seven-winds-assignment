@@ -1,0 +1,43 @@
+.sidebar {
+	$width: 240px;
+	width: $width;
+	color: $primary-color;
+	position: relative;
+	flex-shrink: 0;
+	z-index: 1;
+	& .sidebarPaper {
+		width: $width;
+		border: $border-color solid 1px;
+		background-color: $background-color;
+		color: $primary-color;
+		box-sizing: border-box;
+	}
+}
+
+.projectAccordion {
+	margin: 0;
+	background-color: $background-color;
+	color: $primary-color;
+	border: $border-color solid 1px;
+	height: 40px;
+	& svg {
+		color: $primary-color;
+	}
+	& .projectTitle, & .abbreviation{
+		color: $secondary-color;
+	}
+	& .projectTitle {
+		font-size: 14px;
+	}
+	& .abbreviation {
+		font-size: 10px;
+	}
+}
+.projectDetails {
+	background-color: $background-color;
+	color: $primary-color;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	padding: 0;
+}
