@@ -7,7 +7,7 @@
 	z-index: 1;
 	& .sidebarPaper {
 		width: $width;
-		border: $border-color solid 1px;
+		border: $hint-color solid 1px;
 		background-color: $background-color;
 		color: $primary-color;
 		box-sizing: border-box;
@@ -18,12 +18,13 @@
 	margin: 0;
 	background-color: $background-color;
 	color: $primary-color;
-	border: $border-color solid 1px;
+	border: $hint-color solid 1px;
 	height: 40px;
 	& svg {
 		color: $primary-color;
 	}
-	& .projectTitle, & .abbreviation{
+	& .projectTitle,
+	& .abbreviation {
 		color: $secondary-color;
 	}
 	& .projectTitle {
