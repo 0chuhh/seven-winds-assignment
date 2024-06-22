@@ -1,0 +1,11 @@
+.appbar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    border:$border-color solid 1px;
+	background-color: $background-color;
+	color: $primary-color;
+    padding: 0 20px;
+}
+
+

@@ -1,0 +1,14 @@
+.tabs {
+	& .tab {
+		color: $secondary-color;
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+	}
+
+	& .selected {
+		color: $primary-color;
+	}
+    & .indicator{
+        background-color: $primary-color;
+    }
+}

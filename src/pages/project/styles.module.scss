@@ -1,0 +1,19 @@
+.tabPanel {
+    width: 100%;
+    height: 50px;
+    color: $primary-color;
+    background-color: $background-color;
+    border-bottom: $border-color solid 1px;
+
+    & .tabTitle {
+        padding: 10px 15px;
+        box-sizing: border-box;
+        border-right: $border-color solid 1px;
+        width: max-content;
+        height: 100%;
+    }
+}
+
+.main{
+    padding: 20px;
+}

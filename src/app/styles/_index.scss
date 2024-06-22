@@ -1,2 +1,12 @@
 @import "normalize";
 @import "vars";
+html {
+	height: 100vh;
+}
+body,#root,.app, .app>div{
+	height: 100%;
+}
+body,
+html {
+	background-color: $darker-background-color;
+}
