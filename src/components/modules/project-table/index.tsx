@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import { IRow } from 'models/row';
 import styles from './styles.module.scss';
 import { TreeView } from './tree-view';
@@ -8,7 +7,7 @@ export interface IProjectTableProps {
     rows: IRow[];
 }
 
-export const ProjectTable: FC<IProjectTableProps> = ({ rows }) => {
+export const ProjectTable: FC<IProjectTableProps> = React.memo(({ rows }) => {
     return (
         <div className={styles.tree}>
             <div className={styles.treeHead}>
@@ -22,4 +21,4 @@ export const ProjectTable: FC<IProjectTableProps> = ({ rows }) => {
             <TreeView rows={rows}/>
         </div>
     );
-};
+});
