@@ -1,5 +1,7 @@
+import { CMRModule } from "components/modules/CMR";
+
 export const CMR = () => {
     return (
-        <div>CMR</div>
+        <CMRModule/>
     );
 };
